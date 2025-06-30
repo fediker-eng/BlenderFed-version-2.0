@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlenderFed</title>
+    <link rel="icon" type="image/png" href="image/BlenderFed.png" sizes="100x100">
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+
+<header style="display:flex;justify-content: space-between; align-items: center;">
+    <p style="text-align: left; font-size: large">On this site you can download free 3D models</p>
+    <h1>BlenderFed</h1>
+    <button id="myButton5" class="my-button">Download all models for free</button>
+
+</header>
+
+<main style="position: relative; z-index: 1">
+    <!--Button 0-->
+    <div id="myModal" class="myModal">
+        <div style="display: flex; justify-content: end">
+            <button class="close-button1" aria-label="Закрыть окно" id="close-button">
+                <span aria-hidden="true">×</span>
+            </button>
+
+        </div>
+        <a href="https://sketchfab.com/FedBlend/models" class="link">https://sketchfab.com/FedBlend/models</a>
+        <p class="realistic-text">Click on this link for see my models</p>
+
+    </div>
+    <!--      //Button 1-->
+    <div id="myModal1" class="myModal1">
+        <div style="display: flex; justify-content: end;">
+            <button class="close-button1" aria-label="Закрыть окно" id="close-button1">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+
+        <div style="flex-direction: column;">
+        <img src="image/car.jpg" style="width: 50%; height: auto" alt="car">
+            <video src="videos/video.mp4" style="width: 35%; height: 55% " controls></video>
+
+            <div style="flex-direction: column; padding: 20px;" >
+                <p class="text">This project is big. I'can animation car or all models. I have Blender 3.6.12. This version is good and new product in blender.org.This project contains a car not of our own production (work), but the textures, bridge, etc. were made independently. The idea was taken from a video on YouTube about car animation.</p>
+            </div>
+            <img src="image/car1.jpg" style="width: 20%; height: auto" alt="car">
+            <img src="image/car 2.jpg" style="width: 20%; height: auto" alt="car">
+            <img src="image/car3.png" style="width: 20%; height: auto" alt="car">
+            <img src="image/car4.png" style="width: 20%; height: auto" alt="car">
+            <p class="text">The texture of the oswalt turned out to be a little similar. At the same time, in the last picture we see that the asphalt is more seamless.Here it was necessary to suffer with UV unwrapping of textures. Despite this I finished this part of the project. And I got busy with animation. And got the result.</p>
+
+
+        </div>
+
+    </div>
+    <!--button 2-->
+    <div id="myModal2" class="myModal2">
+        <div style="display: flex; justify-content: end">
+            <button class="close-button1" aria-label="Закрыть окно" id="close-button2">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+    </div>
+    <!--      button 3-->
+    <div id="myModal3" class="myModal3">
+        <div style="display: flex; justify-content: end">
+            <button class="close-button1" aria-label="Закрыть окно" id="close-button3">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+    </div>
+    <!--      button 4-->
+    <div style="" id="myModal4" class="myModal4">
+        <div style="display: flex; justify-content: center;">
+            <p style=" font-size: x-large; color: white">Do you want to download all models from this website?</p>
+        </div>
+        <div style="display: flex; justify-content: end; font-size: xxx-large; padding: 20px; gap: 20px">
+            <button id="myButton7" class="my-button1">Download</button>
+            <button id="myButton6" class="close">Close</button>
+        </div>
+    </div>
+
+    <p id="massage1"></p>
+    <p id="massage2"></p>
+    <p id="massage3"></p>
+    <p id="massage4"></p>
+    <p id="massage5"></p>
+    <p id="massage"></p>
+    <!--    loading window-->
+    <div id="loading" class="loading">
+        <p class="loading-text">Loading process...</p>
+        <div class="loading-bar">
+        <div class="loading-line" id="loading-line"></div>
+        </div>
+        <div class="loading-button-container">
+            <button class="loading-button" id="loading-button"> >> </button>
+            <button class="loading-button" id="loading-button1"> << </button>
+            <p class="button-text">Show detals</p>
+        </div>
+        <div class="loading-cancel-text">
+            <p class="loading-progress" id="loading-process">Downloading all models...</p>
+            <button class="cancel" id="cancel">Cancel</button>
+        </div>
+    </div>
+<!--    finish loading-->
+<!--    complete loading window-->
+    <div class="complete-loading" id="complete-loading">
+        <div class="complete-container">
+            <p class="complete-text">Complete!</p>
+            <button class="complete-button" id="complete-button">Ok!</button>
+        </div>
+    </div>
+<!--    ^finish complete loading window-->
+        <div class="image-container">
+            <img src="image/ATmega Arduino uno1.png" class="image" alt="car" id="image">
+            <button class="image-description" id="button-image">See My models</button>
+        </div>
+        <img src="image/logo.png" class="logo1" alt="logo">
+
+<!--    main information-->
+    <p class="text1">My BIG Project!</p>
+    <p class="text-project">
+        My biggest project is a tunnel with a car. I didn't model it for long, considering that I didn't make the car.
+        The rendering took more time, I spent exactly two days on it.
+    </p>
+    <div class="show-text" id="show-text">
+    <p>And so! Model description:</p>
+        <p>- Tunnel</p>
+        <p>- car</p>
+        <p> - Light textures and polygons</p>
+        <p>Here are the images of the car:</p>
+        <div class="image-my-big">
+        <img src="image/car3.png" alt="car" class="image-car" id="image-car">
+            <img src="image/car 2.jpg" alt="car" class="image-car1" id="image-car1">
+        </div>
+        <p>This asphalt on the first picture is very similar and repeats. It depends on shaders in blender.
+            In this asphalt texture there are no additional shaders except import image.
+            But on the second picture I changed the texture and added shaders that change the size.</p>
+    </div>
+    <button class="roll-up" id="roll-up">RollUp</button>
+    <button class="read-more" id="read-more">Read more</button>
+<!--    portfolio-->
+    <p class="portfolio">MY Portfolio</p>
+    <a href="https://sketchfab.com/FedBlend/models" class="link1">https://sketchfab.com/FedBlend/models</a>
+    <p class="portfolio-text">Copy or click the link above to view and download my models for free.</p>
+    <p class="portfolio-text">You can also see a print screen of my models in part.
+        I develop (make) realistic models or low poly models. I like low poly models more. They are easier to make and they look cool.</p>
+    <div class="print-screen">
+    <img src="image/23.png" class="image-print" alt="car" id="image-print">
+        <div class="image-cube-print" id="image-cube-print">
+            <img src="image/23.png" class="image-print-inbox" alt="car" id="image-print1">
+            <div style="display: flex; justify-content: end">
+                <button class="close-button-img" aria-label="Закрыть окно" id="close-button-in-img">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+        </div>
+    <div class="cube-color"><a href="https://sketchfab.com" class="cube-text">sketchfab.com</a></div>
+        <p class="link-text">If you want to download other models, I can recommend you the site skechfab.com.
+            On it you can download free 3D models made by people from different countries.
+            To go to the site, click the button above!</p>
+    </div>
+<!--    Realistic models-->
+    <p class="realistic-models" style="color: black">Realistic MODELS </p>
+    <p class="realistic-text">I have few realistic models but sometimes I get inspired by this and make cool models.
+        I like 3D although I can't res, but I can create in the 3D world of blender.</p>
+    <p class="realistic-text">Here are links to realistic models:</p>
+        <a href="https://sketchfab.com/3d-models/batery-varta-6568b391074a4eb4979c89bb638f10c1" class="links">https://sketchfab.com/3d-models/batery-varta</a>
+        <p class="links"><a href="https://sketchfab.com/3d-models/flesh-usb-30-64gb-1-f13268d8631e4264804b3633054d7f66" class="links">https://sketchfab.com/3d-models/USB flesh</a></p>
+    <p class="links"><a href="https://sketchfab.com/3d-models/9a7e4b4d4460448386d429194d01057f" class="links">https://sketchfab.com/3d-models/realistic chees</a></p>
+    <p class="realistic-text">
+        You can't download my models directly from this site! You'll have to go to skechfab to download my models in my profile.
+        My profile is called fedblend, a picture of an arduino uno profile on a white background.
+        To find me on the skechfab site, you need to click on search, select profiles (users), and type in fedblend and it will give you me.
+        I have twelve models and I'm easy to recognize. To go to skechfab.com and find me, click on the colored button in the portfolio section.
+    </p>
+
+    <!--    images windows-->
+    <div id="myModal5" class="myModal6">
+        <div>
+            <button class="close-button1" aria-label="Закрыть окно" id="close-button4">
+                <span aria-hidden="true" >×</span>
+            </button>
+        </div>
+        <p>This model is very late and low poly.</p>
+
+    </div>
+
+</main>
+<footer>
+    <p>My content</p>
+    <button id="myButton" class="button-futter">My portfolio!</button>
+    <button id="myButton1" class="button-futter">My big project</button>
+    <button id="myButton2" class="button-futter">Realistic models</button>
+    <button id="myButton3" class="button-futter">Low poly models</button>
+    <button id="myButton4" class="button-futter">Information for you</button>
+    <img src="image/logo.png" class="logo" alt="logo">
+    <p class="email">My Email: FedBlend@tutamail.com</p>
+
+</footer>
+<script src="script.js"></script>
+
+
+</body>
+</html>
